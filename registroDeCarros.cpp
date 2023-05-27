@@ -5,7 +5,7 @@
 
 using namespace std;
 
-struct vetCar{                         //Declaração do conteúdo do regstro.
+struct vetCar{                         //DeclaraÃ§Ã£o do conteÃºdo do regstro.
 	char modelo[10], cor[10], placa[10];
 	int ano;
 }
@@ -14,18 +14,18 @@ struct vetCar{                         //Declaração do conteúdo do regstro.
 int main(){                            
 	setlocale(LC_ALL,"");              //Ajusta o programa ao "encoding" do console.  <locale.h>
 	
-	vector<vetCar> carros(2);        //Atribuição do conteúdo do registro ao vetor "carros".
+	vector<vetCar> carros(10);        //AtribuiÃ§Ã£o do conteÃºdo do registro ao vetor "carros".
 	int i=0;
 	
-	for(i=0; i<2; i++){                //Entrada de dados do vetor.
+	for(i=0; i<10; i++){                //Entrada de dados do vetor.
 		cin>>carros[i].modelo;
 		cin>>carros[i].cor;
 		cin>>carros[i].placa;
 		cin>>carros[i].ano;
 		cout<<"\n";
 	}
-	for(i=0; i<2; i++){                //Saída de dados do vetor.
-		cout<<"Carro do vetor, posição "<< i<<":"<<endl;
+	for(i=0; i<10; i++){                //SaÃ­da de dados do vetor.
+		cout<<"Carro do vetor, posiÃ§Ã£o "<< i<<":"<<endl;
 		cout<<"modelo:";
 		cout<<carros[i].modelo<<endl; 
 		cout<<"cor:";
@@ -36,8 +36,8 @@ int main(){
 		cout<<carros[i].ano<<endl;
 		cout<<"\n";
 	}
-	for(i=0; i<2; i++){                                 //Retorna os carros vermelhos do vetor.
-		if (strcmp(carros[i].cor, "vermelho") == 0){    //Compara a string ao valor da variável. <cstring>
+	for(i=0; i<10; i++){                                 //Retorna os carros vermelhos do vetor.
+		if (strcmp(carros[i].cor, "vermelho") == 0){    //Compara a string ao valor da variÃ¡vel. <cstring>
 			cout<<"Carro vermelho:"<<endl;
 			cout<<"modelo:";
 			cout<<carros[i].modelo<<endl;
