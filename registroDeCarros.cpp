@@ -47,7 +47,7 @@ int main(){
 			cout<<carros[i].ano<<endl;
 			cout<<"\n";
 		}
-}
+	}
 	
 	return 0;
 }
